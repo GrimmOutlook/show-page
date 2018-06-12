@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 80px 64px 61px min-content 426px;
   grid-template-columns: 1fr;
-  /* padding: 0 165px; */
+  grid-template-columns: [screen-edge-left] minmax(1.5rem, 16.5rem) [margin-left-end content-start] 1fr [content-end margin-right-start] minmax(1.5rem, 16.5rem) [screen-edge-right];
   justify-content: center;
 }
 
@@ -10,12 +10,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 165px;
+  grid-column: screen-edge-right / screen-edge-left;
+  padding: 0 16.5rem;
 }
 
 .header-list {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -23,14 +23,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 165px;
+  grid-column: screen-edge-right / screen-edge-left;
+  padding: 0 16.5rem;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 165px;
+  grid-column: screen-edge-right / screen-edge-left;
+  /* padding: 0 165px; */
   border-bottom: 1px solid black;
 }
 
@@ -46,7 +48,9 @@
   flex: 1;
   /* width: 1110px; */
   width: 100%;
-  padding: 100px 165px 80px;
+  padding: 10rem 0 8rem;
+  grid-column: content-start / content-end;
+  /* padding: 10rem 16.5rem 8rem; */
 }
 
 .shows {
@@ -78,21 +82,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 .show__actions-ticket {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  margin-right: 2rem;
-  border: 1px solid gray;
-}
-
-.show__actions-going {
-  border: 1px solid gray;
-  padding: 1rem;
 }
 
 .show__actions-going input[type="checkbox"] {
@@ -104,17 +99,14 @@
 }
 
 .footer {
-  padding: 0 165px;
+  grid-column: screen-edge-right / screen-edge-left;
+  padding: 10rem 16.5rem;
 }
 
 .footer__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer__text > h4 {
-  color: white;
 }
 
 .footer__icons {
@@ -127,15 +119,7 @@
   justify-content: flex-start;
 }
 
-.footer__links > li {
-  color: white;
-}
-
 .footer__copyright {
   display: flex;
   justify-content: flex-start;
-}
-
-.footer__copyright > h4 {
-  color: white;
 }
