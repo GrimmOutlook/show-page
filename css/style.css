@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .header {
   background-color: var(--black);
 }
@@ -41,7 +45,12 @@ ul {
 .header-list li {
   color: var(--white);
   font-size: 1.6rem;
-  margin-left: 4rem;
+  /* margin-left: 4vw; */
+  /* margin-left: 4rem; */
+}
+
+.header-list li:not(:first-of-type) {
+  margin-left: 3vw;
 }
 
 .band-banner {
@@ -64,6 +73,14 @@ ul {
 .navigation-items li {
   font-size: 1.6rem;
   padding: 0 1.6rem;
+}
+
+.list-title {
+  padding: 4rem 0 2.4rem;
+}
+
+.list-title p {
+  font-size: 2.4rem;
 }
 
 .shows-main {
@@ -142,18 +159,31 @@ ul {
 .show__actions-going {
   border: 1px solid var(--warm-grey);
   border-radius: 4px;
-  padding: 1rem;
+  padding: 0.8rem 0 0.8rem 0.8rem;
   margin-right: 2.4rem;
 }
 
-.show__actions-going span {
-  font-size: 1.4rem;
-  color: var(--black);
+.show__actions-going input[type="checkbox"] {
+  display: none;
 }
 
-.show__actions-going input {
-  height: 2.4rem;
-  width: 2.4rem;
+.show__actions-going input[type="checkbox"] + label {
+  color: var(--black);
+  margin-right: 1.4rem;
+}
+
+.show__actions-going input[type="checkbox"] + label span {
+  display:inline-block;
+  width: 23px;
+  height: 23px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.show__actions-going input[type="checkbox"]:checked + label span {
+  background: url('../img/checkmark.svg') center no-repeat var(--black);
 }
 
 .footer {
@@ -192,3 +222,8 @@ ul {
   color: var(--warm-grey);
 }
 
+@media only screen and (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
