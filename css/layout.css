@@ -1,0 +1,153 @@
+.container {
+  display: grid;
+  grid-template-rows: 80px 64px 61px min-content 426px;
+  grid-template-columns: 1fr;
+  /* padding: 0 165px; */
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-list li {
+  color: #fff;
+}
+
+.band-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 165px;
+  border-bottom: 1px solid black;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shows-main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  /* width: 1110px; */
+  width: 100%;
+  padding: 100px 165px 80px;
+}
+
+.shows {
+  width: 100%;
+}
+
+.show:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.show {
+  border: 1px solid gray;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.show__location {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.show__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.show__actions-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-right: 2rem;
+  border: 1px solid gray;
+}
+
+.show__actions-going {
+  border: 1px solid gray;
+  padding: 1rem;
+}
+
+.show__actions-going input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.show__actions-going input[type="checkbox"]:checked {
+  background-image: url('./img/checkmark.svg');
+}
+
+.footer {
+  padding: 0 165px;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text > h4 {
+  color: white;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__links > li {
+  color: white;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__copyright > h4 {
+  color: white;
+}
