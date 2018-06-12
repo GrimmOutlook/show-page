@@ -15,12 +15,8 @@
 
 .header-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
-}
-
-.header-list li {
-  color: #fff;
 }
 
 .band-banner {
@@ -57,14 +53,7 @@
   width: 100%;
 }
 
-.show:nth-child(even) {
-  background-color: #fafafa;
-}
-
 .show {
-  border: 1px solid gray;
-  height: 120px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +64,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
 }
 
 .show__location {

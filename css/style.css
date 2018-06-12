@@ -38,6 +38,12 @@ ul {
   background-color: var(--black);
 }
 
+.header-list li {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin-left: 4rem;
+}
+
 .band-banner {
   background-color: var(--darkish-green);
 }
@@ -46,8 +52,54 @@ ul {
   background-color: var(--white);
 }
 
+.navigation-items li {
+  font-size: 1.6rem;
+  padding: 0 1.6rem;
+}
+
 .shows-main {
   background-color: var(--white);
+}
+
+.shows {
+  border-bottom: 1px solid gray;
+}
+
+.show {
+  border: 1px solid gray;
+  height: 120px;
+}
+
+.show:nth-child(even) {
+  background-color: #fafafa;
+  border-top: none;
+  border-bottom: none;
+}
+
+.show__date {
+  padding: 1.6rem 3.2rem;
+  margin: 1.6rem;
+  background-color: var(--darkish-green);
+  color: var(--white);
+}
+
+.show__date-month {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.6rem;
+}
+
+.show__date-day {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+.show__date-year {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
 }
 
 .footer {
