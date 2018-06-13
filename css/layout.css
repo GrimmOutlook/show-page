@@ -1,46 +1,32 @@
 .container {
   display: grid;
   grid-template-rows: 8rem 6.4rem 6.1rem 10rem min-content 42.6rem;
-  /* grid-template-columns: 1fr; */
   grid-template-columns: [screen-edge-left] minmax(1.5rem, 16.5rem) [margin-left-end content-start] minmax(69rem, 1fr) [content-end margin-right-start] minmax(1.5rem, 16.5rem) [screen-edge-right];
-  /* grid-template-columns: [screen-edge-left] 1fr [margin-left-end content-start] minmax(2fr, 111rem) [content-end margin-right-start] 1fr [screen-edge-right]; */
-  /* justify-content: center; */
 }
 
 .header {
-  justify-content: space-between;
-  justify-content: flex-start;
-  align-items: center;
   grid-column: screen-edge-right / screen-edge-left;
-  /* grid-column: content-start / content-end; */
-  padding: 0 16.5rem;
-
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: [sub-left] minmax(1.5rem, 16.5rem) [left-end cont-start] minmax(34.5rem, 1fr) [cont-mid-l cont-mid-r] minmax(34.5rem, 1fr) [cont-end right-start] minmax(1.5rem, 16.5rem) [sub-right];
+  align-items: center;
 }
 
 .logo-header {
+  grid-column: cont-start / cont-mid-l;
+  /* grid-column: 2 / 3; */
+  grid-row: 1 /2;
   height: 50%;
-  position: absolute;
-  left: 16.5rem;
-  /* left: 0; */
-  top: 50%;
-  transform: translateY(-50%);
+  justify-self: start;
 }
 
 .header-list {
-  margin: auto;
+  grid-column: cont-start / cont-end;
+  /* grid-column: 2 / 4; */
+  grid-row: 1 /2;
+  justify-self: center;
+  align-self: center;
   display: flex;
 }
-
-/* .band-banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* grid-column: content-start / content-end; */
-  /* grid-column: screen-edge-right / screen-edge-left;
-  padding: 0 16.5rem;
-} */
 
 .band-banner {
   grid-column: screen-edge-right / screen-edge-left;
@@ -65,7 +51,6 @@
   justify-content: center;
   align-items: center;
   grid-column: screen-edge-right / screen-edge-left;
-  /* padding: 0 165px; */
   border-bottom: 1px solid black;
 }
 
@@ -83,11 +68,9 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  /* width: 1110px; */
   width: 100%;
   padding-bottom: 8rem;
   grid-column: content-start / content-end;
-  /* padding: 10rem 16.5rem 8rem; */
 }
 
 .shows {
@@ -129,7 +112,6 @@
 
 .footer {
   grid-column: screen-edge-right / screen-edge-left;
-  /* padding: 10rem 16.5rem; */
   padding: 10rem 0;
 
   display: grid;
