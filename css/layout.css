@@ -51,7 +51,6 @@
   justify-content: center;
   align-items: center;
   grid-column: screen-edge-right / screen-edge-left;
-  border-bottom: 1px solid black;
 }
 
 .navigation-items {
@@ -170,6 +169,10 @@
   .shows-main,
   .footer {
     grid-column: 1 / -1;
+  }
+
+  .navigation {
+    justify-content: flex-start;
   }
 
   .show__actions {
