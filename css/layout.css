@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 8rem 6.4rem 6.1rem 10rem min-content 42.6rem;
+  grid-template-rows: 8rem 6.4rem 6.1rem 10rem min-content minmax(42.6rem, 77.8rem);
   grid-template-columns: [screen-edge-left] minmax(1.5rem, 16.5rem) [margin-left-end content-start] minmax(69rem, 1fr) [content-end margin-right-start] minmax(1.5rem, 16.5rem) [screen-edge-right];
 }
 
@@ -126,6 +126,11 @@
   align-items: center;
 }
 
+.footer__text--follow2 {
+  /* display: none; */
+  visibility: hidden;
+}
+
 .footer__icons {
   grid-column: cont-start / cont-end;
   display: flex;
@@ -142,4 +147,74 @@
   grid-column: cont-start / cont-end;
   display: flex;
   justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-list {
+    justify-self: end;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    /* GRID ROWS SAME FOR MOBILE SCREENS - DOUBLE MEDIA QUERY */
+    grid-template-rows: 6.4rem 4.3rem 4.8rem 7.8rem min-content minmax(42.6rem, 77.8rem);
+    grid-template-columns: [screen-edge-left] minmax(1.5rem, 16.5rem) [margin-left-end content-start] minmax(34.5rem, 1fr) [content-end margin-right-start] minmax(1.5rem, 16.5rem) [screen-edge-right];
+  }
+
+  .header,
+  .band-banner,
+  .navigation,
+  .list-title,
+  .shows-main,
+  .footer {
+    grid-column: 1 / -1;
+  }
+
+  .show__actions {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 7.4rem 0 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .footer__text {
+    justify-content: center;
+    grid-column: 1 / 2;
+  }
+
+  .footer__text--follow {
+    visibility: hidden;
+  }
+
+  .footer__text--follow2 {
+    grid-column: 1 / 2;
+    align-self: center;
+    grid-row: 3 / 4;
+    visibility: visible;
+  }
+
+  .footer__icons {
+    grid-column: 1 / 2;
+    justify-content: center;
+    grid-row: 4 / 5;
+  }
+
+  .footer__links {
+    grid-column: 1 / 2;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__copyright {
+    grid-column: 1 / 2;
+    justify-content: center;
+    padding: 6.4rem 0 8rem;
+    grid-row: 5 / 6;
+  }
+
 }
