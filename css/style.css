@@ -235,7 +235,7 @@ ul {
 @media only screen and (max-width: 768px) {
   .navigation {
     overflow-x: scroll;
-    /* justify-content: flex-start; */
+    /* overflow-y: hidden; */
   }
 
   .navigation::-webkit-scrollbar {
@@ -360,5 +360,11 @@ ul {
 
   .navigation-items li:hover {
     color: var(--darkish-green);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .show__actions {
+
   }
 }
