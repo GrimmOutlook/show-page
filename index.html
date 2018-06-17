@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.css">
-    <!-- <link rel="stylesheet" href="css/layout.css"> -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 
     <title>Phantasy Tour</title>
   </head>
   <body class="container">
-      <!-- <div class="container"> -->
+
     <header class="header">
-      <div class="logo-header">
+      <div class="header__logo">
         <img src="img/logo-desktop-header.svg" />
       </div>
-      <ul class="header-list">
+      <ul class="header__list">
         <li>Bands</li>
         <li>Festivals</li>
         <li>Venues</li>
@@ -25,14 +26,11 @@
         <li>Groups</li>
         <li>Merch</li>
       </ul>
-      <div class="hamburger-menu">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__icon">&nbsp;</label>
-        <!-- <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label> -->
-
-        <!-- <div class="navigation__background">&nbsp;</div> -->
+      <div class="header__hamburger">
+        <input type="checkbox" class="header__hamburger--checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="header__hamburger--button">
+          <span class="header__hamburger--icon">&nbsp;</span>
+        </label>
       </div>
     </header>
 
@@ -61,7 +59,6 @@
     </div>
 
     <section class="shows-main">
-      <!-- <h3>Shows (6)</h3> -->
       <ul class="shows">
         <li class="show show-1">
           <div class="show__date">
@@ -223,6 +220,5 @@
       </div>
     </footer>
 
-  <!-- </div> -->
   </body>
 </html>
