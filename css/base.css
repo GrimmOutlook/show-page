@@ -91,6 +91,8 @@ ul {
 
 .navigation-items li:hover {
   color: var(--darkish-green);
+  font-weight: 700;
+  transform: scale(1.1);
 }
 
 .navigation-items li:hover::after {
@@ -128,6 +130,10 @@ ul {
 .show:nth-child(even) {
   background-color: var(--white-two);
   border-top: none;
+  border-bottom: none;
+}
+
+.show:last-of-type {
   border-bottom: none;
 }
 

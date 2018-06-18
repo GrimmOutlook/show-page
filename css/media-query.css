@@ -81,17 +81,41 @@
     display: none;
   }
 
+  .header__hamburger {
+    position: relative;
+  }
+
   .header__hamburger,
   .header__hamburger::before,
   .header__hamburger::after {
-    display: block;
+    display: inline-block;
   }
   .header__hamburger--checkbox {
     display: none;
   }
 
+  .header__hamburger--button {
+    background-color: var(--black);
+    /* border-radius: 50%; */
+    height: 3.2rem;
+    width: 3.2rem;
+    position: absolute;
+    /* top: 0rem; */
+    right: 0;
+    z-index: 2000;
+    /* text-align: center; */
+    cursor: pointer;
+  }
+
+  /* .header__hamburger:hover {
+    border: 1px solid red;
+    position: relative;
+    top: 1rem;
+  } */
+
   .header__hamburger--icon {
     position: relative;
+    /* margin-top: 3.2rem; */
   }
 
   .header__hamburger--icon,
@@ -100,7 +124,7 @@
     width: 3rem;
     height: 2px;
     background-color: var(--white);
-    display: block;
+    display: inline-block;
   }
 
   .header__hamburger--icon::before,
@@ -113,25 +137,6 @@
 
   .header__hamburger--icon::before { top: -0.8rem; }
   .header__hamburger--icon::after { top: 0.8rem; }
-
-  /* .header__hamburger--button {
-    background-color: var(--black);
-    border-radius: 50%;
-    height: 7rem;
-    width: 7rem;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 2000;
-    text-align: center;
-    cursor: pointer;
-  } */
-
-  .header__hamburger:hover {
-    border: 1px solid red;
-    position: relative;
-    top: 1rem;
-  }
 
   .header__hamburger--button:hover .header__hamburger--icon::before { top: -1rem; }
   .header__hamburger--button:hover .header__hamburger--icon::after { top: 1rem; }
