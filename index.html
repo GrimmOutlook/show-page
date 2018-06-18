@@ -6,7 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/media-query.css">
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 
@@ -19,12 +19,12 @@
         <img src="img/logo-desktop-header.svg" />
       </div>
       <ul class="header__list">
-        <li>Bands</li>
-        <li>Festivals</li>
-        <li>Venues</li>
-        <li>Scenes</li>
-        <li>Groups</li>
-        <li>Merch</li>
+        <li><a href="#">Bands</a></li>
+        <li><a href="#">Festivals</a></li>
+        <li><a href="#">Venues</a></li>
+        <li><a href="#">Scenes</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">Merch</a></li>
       </ul>
       <div class="header__hamburger">
         <input type="checkbox" class="header__hamburger--checkbox" id="navi-toggle" />
@@ -37,20 +37,22 @@
     <div class="band-banner">
       <p>Phish</p>
       <div class="icon-settings">
-          <img src="img/gear.png" />
+          <a href="#">
+            <img src="img/gear.png" />
+          </a>
       </div>
     </div>
 
     <nav class="navigation">
       <ul class="navigation-items">
-        <li>Home</li>
-        <li>Forum</li>
-        <li>Tours</li>
-        <li>Shows</li>
-        <li>Setlists</li>
-        <li>Songs</li>
-        <li>Stats</li>
-        <li>Games</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Shows</a></li>
+        <li><a href="#">Setlists</a></li>
+        <li><a href="#">Songs</a></li>
+        <li><a href="#">Stats</a></li>
+        <li><a href="#">Games</a></li>
       </ul>
     </nav>
 
@@ -67,13 +69,17 @@
             <div class="show__date-year">2018</div>
           </div>
           <div class="show__location">
-            <div class="show__location-venue">Lake Tahoe Outdoor Arena at Harveys</div>
+            <a href="#">
+              <div class="show__location-venue">Lake Tahoe Outdoor Arena at Harveys</div>
+            </a>
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
               <input type="checkbox" id="show-1" />
@@ -92,9 +98,11 @@
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
                 <input type="checkbox" id="show-2" />
@@ -113,9 +121,11 @@
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
                 <input type="checkbox" id="show-3" />
@@ -134,9 +144,11 @@
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
                 <input type="checkbox" id="show-4" />
@@ -155,9 +167,11 @@
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
               <input type="checkbox" id="show-5" />
@@ -176,9 +190,11 @@
             <div class="show__location-scene">Stateline, NV</div>
           </div>
           <div class="show__actions">
-            <div class="show__actions-ticket">
-              <img src="img/icon-ticket.svg" />
-              <span>Tickets</span>
+            <div>
+              <a href="#" class="show__actions-ticket">
+                <img src="img/icon-ticket.svg" />
+                <span>Tickets</span>
+              </a>
             </div>
             <div class="show__actions-going">
               <input type="checkbox" id="show-6" />
@@ -193,6 +209,10 @@
       <div class="footer__text">
         <!-- <img src="img/logo-desktop-footer.svg#svgView(viewBox(0, 0, -110, 50))" alt="crystal ball" /> -->
         <img src="img/logo-desktop-footer.svg" />
+        <div class="footer__stack-logos">
+          <img src="img/logo-experiment-footer.svg" />
+          <img src="img/logo-experiment-footer-text.svg" />
+        </div>
         <p class="footer__text--follow">Follow Us</p>
       </div>
       <div class="footer__text--follow2">
@@ -200,20 +220,26 @@
       </div>
       <div class="footer__icons">
         <div class="icon-instagram">
-          <img src="img/icon-instagram.svg" />
+          <a href="#">
+            <img src="img/icon-instagram.svg" />
+          </a>
         </div>
         <div class="icon-facebook">
-          <img src="img/icon-facebook.svg" />
+          <a href="#">
+            <img src="img/icon-facebook.svg" />
+          </a>
         </div>
         <div class="icon-twitter">
-          <img src="img/icon-twitter.svg" />
+          <a href="#">
+            <img src="img/icon-twitter.svg" />
+          </a>
         </div>
       </div>
       <ul class="footer__links">
-        <li>Support & Feedback</li>
-        <li>Terms of Use</li>
-        <li>Privacy Policy</li>
-        <li>Advertise on PT</li>
+        <li><a href="#">Support & Feedback</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Advertise on PT</a></li>
       </ul>
       <div class="footer__copyright">
         <p>&copy; 1999-2018 Sounding Boards, LLC. All Rights Reserved.</p>

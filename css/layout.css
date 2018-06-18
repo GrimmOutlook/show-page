@@ -1,83 +1,71 @@
 .header,
+.header__list,
+.band-banner,
+.navigation,
+.navigation-items,
+.list-title,
+.shows-main,
+.show,
+.show__date,
+.show__location,
+.show__actions,
+.show__actions-ticket,
+.footer__text,
+.footer__icons,
+.footer__links,
+.footer__copyright {
+  display: flex;
+}
+
+.header,
 .band-banner,
 .navigation,
 .list-title,
 .shows-main {
-  display: flex;
   padding: 0 11.455833vw;
 }
 
-.header,
-.band-banner,
-.navigation,
-.list-title,
-.show {
-  flex-direction: row;
-}
-
-.shows-main {
+.shows-main,
+.show__date,
+.show__location {
   flex-direction: column;
-}
-
-.header,
-.band-banner,
-.list-title {
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header__list,
 .navigation,
-.navigation-items {
-  display: flex;
+.navigation-items,
+.show__date,
+.show__location,
+.show__actions-ticket {
   justify-content: center;
+}
+
+.header,
+.header__list,
+.band-banner,
+.navigation,
+.navigation-items,
+.list-title,
+.show,
+.show__date,
+.show__actions,
+.show__actions-ticket,
+.footer__text {
   align-items: center;
 }
 
-.show {
-  display: flex;
+.header,
+.band-banner,
+.list-title,
+.show,
+.show__actions,
+.footer__text {
   justify-content: space-between;
-  align-items: center;
-}
-
-.show__date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .show__location {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
   margin-right: auto;
-}
-
-.show__actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.show__actions-ticket {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: grid;
-  align-items: center;
-  grid-template-columns: [sub-left] minmax(1.5rem, 11.455833vw) [left-end cont-start] minmax(34.5rem, 1fr) [cont-mid-l cont-mid-r] minmax(34.5rem, 1fr) [cont-end right-start] minmax(1.5rem, 11.455833vw) [sub-right];
-}
-
-.footer__text {
-  grid-column: cont-start / cont-end;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .footer__text--follow2 {
@@ -86,19 +74,10 @@
 }
 
 .footer__icons {
-  grid-column: cont-start / cont-end;
-  display: flex;
   justify-content: flex-end;
 }
 
-.footer__links {
-  grid-column: cont-start / cont-end;
-  display: flex;
-  justify-content: flex-start;
-}
-
+.footer__links,
 .footer__copyright {
-  grid-column: cont-start / cont-end;
-  display: flex;
   justify-content: flex-start;
 }
