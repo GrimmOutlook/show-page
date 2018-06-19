@@ -8,6 +8,10 @@
     position: absolute;
     left: 11.455833vw;
   }
+
+  /* .shows {
+    max-width: 114rem;
+  } */
 }
 
 
@@ -38,7 +42,10 @@
 
   .footer__stack-logos {
     visibility: visible;
-    display: block;
+  }
+
+  .footer__logo-text {
+    margin-top: 4.3rem;
   }
 
   .footer__text--follow {
@@ -50,10 +57,17 @@
     align-self: center;
     visibility: visible;
     order: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.666667;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
   .footer__icons {
     order: 3;
+    height: 2.4rem;
+    margin-top: 2.3rem;
   }
 
   .footer__links {
@@ -196,13 +210,18 @@
     font-weight: normal;
   }
 
-  .footer > * {
+/* .footer > * {
     border: 1px solid red;
-  }
+  } */
 
   .footer {
     height: 77.8rem;
     padding: 7.4rem 0 8rem;
+  }
+
+  .footer__stack-logos {
+    display: flex;
+    flex-direction: column;
   }
 
   .footer__links {
