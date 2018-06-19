@@ -46,7 +46,7 @@ ul {
   display: none;
 }
 
-/*---------------------------- STYLES ----------------------*/
+/*--------------------  HEADER STYLES  ----------------------*/
 
 .header {
   background-color: var(--black);
@@ -62,6 +62,8 @@ ul {
   margin-left: 3vw;
 }
 
+/*-------------------  BAND BANNER STYLES  ----------------------*/
+
 .band-banner {
   background-color: var(--darkish-green);
   height: 6.4rem;
@@ -76,26 +78,28 @@ ul {
   height: 2rem;
 }
 
+/*--------------------  NAVIGATION STYLES  ----------------------*/
+
 .navigation {
   background-color: var(--white);
   border-bottom: 1px solid #e0e0e0;
   height: 6.1rem;
 }
 
-.navigation-items li {
+.navigation__items li {
   font-size: 1.6rem;
   padding: 0 1.6rem;
   color: var(--warm-grey);
   position: relative;
 }
 
-.navigation-items li:hover {
+.navigation__items li:hover {
   color: var(--darkish-green);
   font-weight: 700;
   transform: scale(1.1);
 }
 
-.navigation-items li:hover::after {
+.navigation__items li:hover::after {
   content: "";
   position: absolute;
   bottom: -1.7rem;
@@ -105,6 +109,9 @@ ul {
   background-color: var(--darkish-green);
 }
 
+/*--------------------  MAIN CONTENT STYLES  ----------------------*/
+    /*--------------  LIST TITLE STYLES  ---------------*/
+
 .list-title {
   padding-top: 4rem;
   padding-bottom: 2.4rem;
@@ -113,6 +120,8 @@ ul {
 .list-title p {
   font-size: 2.4rem;
 }
+
+    /*--------------  SHOWS LIST STYLES  ---------------*/
 
 .shows-main {
   background-color: var(--white);
@@ -144,38 +153,38 @@ ul {
   color: var(--white);
 }
 
-.show__date-month {
+.show__date--month {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.6rem;
 }
 
-.show__date-day {
+.show__date--day {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 2.4rem;
 }
 
-.show__date-year {
+.show__date--year {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6rem;
 }
 
-.show__location-venue {
+.show__location--venue {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--sea-blue);
 }
 
-.show__location-scene {
+.show__location--scene {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--warm-grey);
 }
 
-.show__actions-ticket {
+.show__actions--ticket {
   margin-right: 1.6rem;
   border: 1px solid var(--warm-grey);
   border-radius: 4px;
@@ -185,20 +194,20 @@ ul {
   align-items: center;
 }
 
-.show__actions-ticket img {
+.show__actions--ticket img {
   padding: 1.15rem 0.8rem;
   max-width: 100%;
   height: 4rem;
 }
 
-.show__actions-ticket span {
+.show__actions--ticket span {
   font-size: 1.4rem;
   padding-right: 1.6rem;
   padding-bottom: 1.5px;
   color: var(--black);
 }
 
-.show__actions-going {
+.show__actions--going {
   display: flex;
   align-items: center;
   border: 1px solid var(--warm-grey);
@@ -210,16 +219,16 @@ ul {
   min-width: 12rem;
 }
 
-.show__actions-going input[type="checkbox"] {
+.show__actions--going input[type="checkbox"] {
   display: none;
 }
 
-.show__actions-going input[type="checkbox"] + label {
+.show__actions--going input[type="checkbox"] + label {
   color: var(--black);
   margin-right: 1.4rem;
 }
 
-.show__actions-going input[type="checkbox"] + label span {
+.show__actions--going input[type="checkbox"] + label span {
   display:inline-block;
   width: 2.3rem;
   height: 2.3rem;
@@ -229,9 +238,11 @@ ul {
   cursor: pointer;
 }
 
-.show__actions-going input[type="checkbox"]:checked + label span {
+.show__actions--going input[type="checkbox"]:checked + label span {
   background: url('../img/checkmark.svg') center no-repeat var(--black);
 }
+
+/*--------------------  FOOTER STYLES  ----------------------*/
 
 .footer {
   background-color: var(--black);

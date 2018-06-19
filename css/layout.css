@@ -2,14 +2,14 @@
 .header__list,
 .band-banner,
 .navigation,
-.navigation-items,
+.navigation__items,
 .list-title,
 .shows-main,
 .show,
 .show__date,
 .show__location,
 .show__actions,
-.show__actions-ticket,
+.show__actions--ticket,
 .footer__text,
 .footer__icons,
 .footer__links,
@@ -33,10 +33,10 @@
 
 .header__list,
 .navigation,
-.navigation-items,
+.navigation__items,
 .show__date,
 .show__location,
-.show__actions-ticket {
+.show__actions--ticket {
   justify-content: center;
 }
 
@@ -44,12 +44,12 @@
 .header__list,
 .band-banner,
 .navigation,
-.navigation-items,
+.navigation__items,
 .list-title,
 .show,
 .show__date,
 .show__actions,
-.show__actions-ticket,
+.show__actions--ticket,
 .footer__text {
   align-items: center;
 }
