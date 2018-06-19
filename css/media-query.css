@@ -92,6 +92,12 @@
     height: 4.3rem;
   }
 
+  .band-banner__band {
+    font-size: 1.6rem;
+    line-height: 1.6875;
+    font-weight: 700;
+  }
+
   .navigation {
     height: 4.8rem;
     overflow-x: scroll;
@@ -116,20 +122,23 @@
   }
 
   .show__date {
+    height: 6.4rem;
+    width: 6.4rem;
     padding: 0.3rem 2rem;
     margin: 1.9rem 1.6rem 1.9rem 1.6rem;
   }
 
-  .show__date--month {
+  .show__date--month,
+  .show__date--year {
     font-size: 1rem;
+    font-weight: 600;
+    line-height: 2;
   }
 
   .show__date--day {
     font-size: 2rem;
-  }
-
-  .show__date--year {
-    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
   }
 
   .show__location--venue {
